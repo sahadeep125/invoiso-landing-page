@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Invoiso</title>
+  <meta name="description" content="Get help with Invoiso — contact our support team." />
+  <link rel="icon" type="image/png" href="/images/invoiso-logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { heading: ['"Space Grotesk"','sans-serif'], body: ['"DM Sans"','sans-serif'] },
+          colors: {
+            brand: { 50:'#f1fee7',100:'#e0fdca',200:'#c2fb9b',300:'#9af561',400:'#77ea31',500:'#56d012',600:'#3fa60a',700:'#327e0d',800:'#2a6210',900:'#265413',950:'#0f2f04' },
+            accent:'#2563eb', surface:'#ffffff', bg:'#f3f4f5', 'bg-2':'#f4fbee', txt:'#0f172a', 'txt-2':'#4b5563', 'txt-3':'#9ca3af', bdr:'#d4dfd0', muted:'#e5efe2',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; }
+    .glass-strong { background: rgba(255,255,255,0.75); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); border: 1px solid rgba(212,223,208,0.7); }
+    .gradient-text { background: linear-gradient(135deg,#3fa60a,#56d012); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gradient-btn { background: linear-gradient(135deg,#3fa60a,#56d012); color:#fff; transition: all 0.3s ease; }
+    .gradient-btn:hover { box-shadow: 0 8px 30px rgba(63,166,10,0.35); transform: translateY(-2px); }
+    .blob-1 { position:fixed;top:-200px;left:-150px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(86,208,18,0.12),transparent 70%);z-index:-1;pointer-events:none; }
+    .blob-2 { position:fixed;bottom:-200px;right:-150px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,0.08),transparent 70%);z-index:-1;pointer-events:none; }
+  </style>
+</head>
+<body class="bg-bg text-txt min-h-screen antialiased">
+  <div class="blob-1"></div>
+  <div class="blob-2"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-strong">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/images/invoiso-logo.png" alt="Invoiso" class="w-10 h-10 rounded-xl" />
+        <span class="font-heading text-xl font-bold gradient-text">Invoiso</span>
+      </a>
+      <div class="flex items-center gap-1">
+        <a href="/" class="px-4 py-2 rounded-xl text-sm font-medium text-txt-2 hover:text-txt hover:bg-muted transition-all">Home</a>
+        <a href="/privacy.html" class="px-4 py-2 rounded-xl text-sm font-medium text-txt-2 hover:text-txt hover:bg-muted transition-all">Privacy</a>
+        <a href="/terms.html" class="px-4 py-2 rounded-xl text-sm font-medium text-txt-2 hover:text-txt hover:bg-muted transition-all">Terms</a>
+        <a href="/support.html" class="px-4 py-2 rounded-xl text-sm font-medium bg-brand-50 text-brand-700">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <section class="max-w-2xl mx-auto px-6 pt-32 pb-20 text-center">
+    <h1 class="font-heading text-4xl font-bold mb-4 gradient-text">Support</h1>
+    <p class="text-txt-2 mb-12">Need help? We're here for you.</p>
+
+    <div class="glass-strong rounded-3xl p-8 sm:p-12 space-y-8" style="box-shadow: 0 0 60px -12px rgba(63,166,10,0.15);">
+      <!-- Icon -->
+      <div class="w-16 h-16 rounded-2xl bg-brand-100 flex items-center justify-center mx-auto">
+        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+      </div>
+
+      <p class="text-txt-2 leading-relaxed">
+        For any questions, issues, or feedback about Invoiso, please reach out through our support channel below.
+      </p>
+
+      <!-- Support URL -->
+      <a href="mailto:support@invoiso.app" class="gradient-btn inline-flex items-center gap-2.5 font-semibold px-8 py-4 rounded-2xl">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        support@invoiso.app
+      </a>
+
+      <div class="pt-6 border-t border-bdr">
+        <p class="text-sm text-txt-3 mb-3">You can also visit our help center:</p>
+        <a href="https://invoiso.app/support" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-brand-600 hover:underline font-medium">
+          https://invoiso.app/support
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-bdr mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="/images/invoiso-logo.png" alt="Invoiso" class="w-8 h-8 rounded-lg" />
+          <span class="font-heading font-bold gradient-text">Invoiso</span>
+        </div>
+        <div class="flex gap-6 text-sm text-txt-2">
+          <a href="/privacy.html" class="hover:text-txt transition-colors">Privacy</a>
+          <a href="/terms.html" class="hover:text-txt transition-colors">Terms of Use</a>
+          <a href="/support.html" class="hover:text-txt transition-colors">Support</a>
+        </div>
+        <p class="text-sm text-txt-3">© 2025 Invoiso. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
